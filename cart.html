@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>happymmall电商平台</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/layout.css">
+    </head>
+<style type="text/css" >
+#cart-table {
+    width: 100%;
+    padding-left: 20px;
+}
+#cart-footer{
+    background: #eee;
+
+}
+</style>
+<body>
+ <!--nav-->
+<div class="nav">
+    <div class="w">
+        <div class="user-info">
+            <span class="user not-login">
+                <span class="link js-login" >登录</span>
+                <span class="link js-register">注册</span>
+            </span>
+            <span class="user login">
+                <span class="link-text">
+                    欢迎，
+                    <span class="username"></span>
+                </span>
+                <span class="link js-logout">退出</span>
+            </span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="link" href="./cart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                    购物车(<span class="cart-count">0</span>)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./order-list.html">我的订单</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./user-center.html">我的MMall</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./about.html">关于MMall</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--nav-->
+<!--header-->
+<div class="header">
+    <div class="w">
+        <a class="logo" href="./index.html">MMall</a>
+        <div class="search-con">
+            <input class="search-input" id="search-input" placeholder="请输入商品名称"/>
+            <button class="btn search-btn" id="search-btn">搜索</button>
+        </div>
+    </div>
+</div>
+<!--header-->
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">MMall</a>
+                    <span>>我的购物车</span>
+                    <span class="link-text"></span>
+                </div>
+            </div>
+        </div>
+        <div class="cart-wrap w">
+            <div class="cart-header">
+                <table calss="cart-table" id="cart-table">
+                    <tbody>
+                        <tr>
+                            <th class="cart-cell cell-check">
+                                <label>
+                                <input type="checkbox" class="cart-select-all" checked="checked">
+                                <span>全选</span>
+                                </label>
+                            </th>
+                            <th class="cart-cell cell-info">商品信息</th>
+                            <th class="cart-cell cell-price">单价</th>
+                            <th class="cart-cell cell-count">数量</th>
+                            <th class="cart-cell cell-total">合计</th>
+                            <th class="cart-cell cell-opera">操作</th>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <div class="cart-list">
+                <table class="cart-table" data-product-id="26" data-checked="1">
+                <tbody >
+                    <tr>
+                        <td class="cart-cell cell-check">
+                            <input type="checkbox" class="cart-select" checked="checked">
+                        </td>
+                        <td class="cart-cell cell-img">
+                            <a><img class="p-img" src="http://img.happymmall.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="测试使用Apple iPhone 7 Plus (A1661) 128G手机"></a>
+                        </td>
+                        <td class="cart-cell cell-info">
+                            <a class="link p-name" href="">测试使用Apple iPhone 7 Plus (A1661) 128G手机</a>
+                        </td>
+                        <td class="cart-cell cell-price">
+                            ￥6997
+                        </td>
+
+                        <td class="cart-cell cell-count">
+                            <span class="count-btn" data-opera-type="minus">-</span>
+                            <input class="count-input" data-max="118176" value="8">
+                            <span class="count-btn" data-opera-type="plus">+</span>
+                        </td>
+                        <td class="cart-cell cell-total">￥55976</td>
+                        <td class="cart-cell cell-opera"><a class="link cart-delete">删除</a></td>
+                    </tr>
+                </tbody>
+                </table>
+                </div>
+                <div class="cart-footer clear" id="cart-footer">
+                    <div class="select-con">
+                        <label >
+
+                                <input type="checkbox" class="cart-select-all" checked="checked">
+                                <span>全选</span>
+
+                        </label>
+                    </div>
+                    <div class="delete-con">
+                        <a class="cart-delete-seleced link">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        <span>删除选中</span>
+                        </a>
+                    </div>
+                    <div class="submit-con">
+                        <span>总价：</span>
+                        <span class="submit-total">￥55976</span>
+                        <span class="btn submit-btn">去结算</span>
+                    </div>
+                    &nbsp
+                </div>
+
+        </div>
+        <!--footer-->
+<div class="footer">
+    <div class="w">
+        <div class="links">
+            <a class="link" href="http://www.imooc.com" target="_blank">慕课网</a> |
+            <a class="link" href="https://www.baidu.com" target="_blank">百度</a> |
+            <a class="link" href="https://www.taobao.com" target="_blank">淘宝</a> |
+            <a class="link" href="https://www.zhihu.com" target="_blank">知乎</a>
+        </div>
+        <p class="copyright">
+            Copyright © 2017 happymmall.com All Right Reserved
+        </p>
+    </div>
+</div>
+<!--footer-->
+    </body>
+</html>
